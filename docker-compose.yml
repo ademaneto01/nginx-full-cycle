@@ -17,6 +17,7 @@ services:
       - MYSQL_USER=root
       - MYSQL_PASSWORD=root
       - MYSQL_DATABASE=test
+    command: sh -c "npm install && npm start"
     depends_on:
       - mysql
 
