@@ -12,6 +12,7 @@ services:
     build: ./node
     volumes:
       - ./node:/usr/src/app
+      - /usr/src/app/node_modules
     environment:
       - MYSQL_HOST=mysql
       - MYSQL_USER=root
